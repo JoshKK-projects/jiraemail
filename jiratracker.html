@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href='css.css'>
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="auther.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
+  </head>
+  <body>
+    <div id="authorize-div">
+      <span>Authorize access to Gmail API</span>
+      <!--Button for the user to click to initiate auth sequence -->
+      <button id="authorize-button" onclick="handleAuthClick(event)">
+        Authorize
+      </button>
+    </div>
+    <div class="grid" id="email-div">
+    </div>
+  </body>
+</html>
